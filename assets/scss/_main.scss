@@ -2,8 +2,91 @@
 @use 'config';
 
 
-
-
+.lad_art01{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+    @media only screen and (min-width:config.$desktop){
+        &{
+            width: 80%;
+        }
+    }
+    >:nth-child(1){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        @media only screen and (min-width: config.$desktop){
+            &{
+                justify-content: space-between;
+            }
+        }
+        >img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center center;
+            @media only screen and (min-width:config.$tablet){
+                &{
+                    height: 40vh;
+                }
+            }
+            @media only screen and (min-width:config.$desktop){
+                &{
+                    width: 40%;
+                    height: 500px;
+                }
+            }
+        }
+        >div{
+            width: 100%;
+            padding: 0 config.$paddingTexto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            row-gap: 1.5rem;
+            @media only screen and (min-width: config.$desktop){
+                &{
+                    width: 55%;
+                }
+            }
+        }
+    }
+    >:nth-child(2){    
+        @media only screen and (min-width: config.$tablet){
+            &{
+                width: 80%;
+            }
+        }
+        @media only screen and (min-width: config.$desktop){
+            &{
+                width: 60%;
+            }
+        }
+    }
+    >:nth-child(3){
+        width: 100%;
+        @media only screen and (min-width: config.$tablet){
+            &{
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;    
+            }    
+        }
+        @media only screen and (min-width: config.$desktop){
+            &{
+                height: 300px;    
+            }    
+        }
+    }
+}
 
 
 

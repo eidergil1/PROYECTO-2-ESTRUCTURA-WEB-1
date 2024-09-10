@@ -32,33 +32,18 @@ $desktop: 1350px;
 
 $paddingTexto: 1.5rem;
 
-/* Estilos de textos y encabezados */
-h1{
-    font-size: 2rem;
-    font-family: $fuente01;
-}
-h2{
-    font-size: 1.8rem;
-    font-family: $fuente01;
-    letter-spacing: 2px;
-}
-p, a{
-    font-size: 0.9rem;
-    font-family: $fuente02;
-    line-height: 1.3rem;
-}
 cite{
+    margin: 0 $paddingTexto;
     padding: 0 $paddingTexto;
-    font-size: 1.2em;
-    font-family: $fuente02;
-    line-height: 2rem;
+    font-size: 1.3rem;
     color: $color01bis;
     border-left: 3px solid $color02;
-    span{
-        font-size: 4rem;
-        line-height: 1rem;
-    }
 }
+.boton{
+    background-color: aquamarine;
+    padding: 1rem 3rem;
+}
+
 
 /* estilos globales básicos de estructura*/
 body{
