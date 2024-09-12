@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* ESTILOS ÚNICOS DE LA PÁGINA DE CONTACTO */
 /* estilos para los elementos HTML COMUNES que aparecen en TODAS LAS PÁGINAS */
-/* Estilos básicos de configuración de toda la web */
-/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +8,6 @@
   box-sizing: border-box;
 }
 
-/* fuentes */
 @font-face {
   font-family: "anton";
   src: url("../fonts/Anton-Regular.ttf");
@@ -19,21 +16,65 @@
   font-family: "poppins";
   src: url("../fonts/Poppins-Regular.ttf");
 }
-/* variables */
+h1 {
+  font-size: clamp(2.5rem, 4vw, 6rem);
+  font-family: "anton";
+  letter-spacing: 2px;
+  color: rgb(34, 34, 34);
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 5rem);
+  font-family: "poppins";
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: rgb(88, 189, 88);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-family: "poppins";
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: rgb(243, 160, 160);
+}
+
+a, p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-family: "poppins";
+}
+
+p {
+  color: rgb(34, 34, 34);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(243, 160, 160);
+}
+
 cite {
+  font-size: clamp(1rem, 3vw, 2rem);
   margin: 0 1.5rem;
-  padding: 0 1.5rem;
-  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem;
   color: rgb(148, 148, 148);
   border-left: 3px solid rgb(243, 160, 160);
 }
 
 .boton {
-  background-color: aquamarine;
+  background-color: rgb(243, 160, 160);
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
   padding: 1rem 3rem;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.boton:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
 }
 
-/* estilos globales básicos de estructura*/
 body {
   display: flex;
   flex-direction: column;
@@ -115,6 +156,11 @@ section {
   align-items: center;
   justify-content: flex-start;
   row-gap: 1.5rem;
+}
+@media only screen and (min-width: 750px) {
+  .lad_art01 > :nth-child(1) > div {
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 1350px) {
   .lad_art01 > :nth-child(1) > div {

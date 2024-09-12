@@ -52,6 +52,11 @@
             align-items: center;
             justify-content: flex-start;
             row-gap: 1.5rem;
+            @media only screen and (min-width: config.$tablet){
+                &{
+                    width: 80%;
+                }
+            }
             @media only screen and (min-width: config.$desktop){
                 &{
                     width: 45%;
