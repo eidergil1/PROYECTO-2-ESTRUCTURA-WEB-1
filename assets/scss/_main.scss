@@ -39,7 +39,7 @@
             }
             @media only screen and (min-width:config.$desktop){
                 &{
-                    width: 40%;
+                    width: 50%;
                     height: 500px;
                 }
             }
@@ -54,7 +54,7 @@
             row-gap: 1.5rem;
             @media only screen and (min-width: config.$desktop){
                 &{
-                    width: 55%;
+                    width: 45%;
                 }
             }
         }

@@ -103,7 +103,7 @@ section {
 }
 @media only screen and (min-width: 1350px) {
   .lad_art01 > :nth-child(1) > img {
-    width: 40%;
+    width: 50%;
     height: 500px;
   }
 }
@@ -118,7 +118,7 @@ section {
 }
 @media only screen and (min-width: 1350px) {
   .lad_art01 > :nth-child(1) > div {
-    width: 55%;
+    width: 45%;
   }
 }
 @media only screen and (min-width: 750px) {
